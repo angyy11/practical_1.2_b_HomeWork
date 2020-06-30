@@ -34,14 +34,12 @@ public class MainActivity extends AppCompatActivity {
         mShowCount.setText(Integer.toString(mCount));
         btnZero.setBackgroundColor(Color.RED);
 
-
         if((mCount%2)==0){
             btnCount.setBackgroundColor(Color.GREEN);
         }
         else{
             btnCount.setBackgroundColor(Color.BLUE);
         }
-
     }
 
 
