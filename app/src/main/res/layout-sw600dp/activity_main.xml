@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/show_count"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="1264dp"
+        android:layout_height="559dp"
         android:background="#FFFF00"
         android:gravity="center"
         android:text="@string/zero"
@@ -17,40 +17,34 @@
         android:textColor="@color/colorPrimary"
         android:textSize="200sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_toast"
-        tools:ignore="RtlCompat" />
+        tools:ignore="RtlCompat"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="96dp" />
 
     <Button
         android:id="@+id/button_toast"
-        android:layout_width="wrap_content"
+        android:layout_width="400sp"
         android:layout_height="wrap_content"
+        android:autoText="false"
         android:background="@color/colorPrimary"
         android:onClick="showToast"
         android:text="@string/Toast_text"
         android:textColor="@android:color/white"
         android:textSize="60sp"
-        app:layout_constraintEnd_toStartOf="@+id/button_count"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="8dp" />
 
     <Button
         android:id="@+id/button_count"
-        android:layout_width="wrap_content"
+        android:layout_width="400sp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:onClick="countUp"
         android:text="@string/count_text"
         android:textColor="@android:color/white"
         android:textSize="60sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_toast"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button_toast" />
+        tools:layout_editor_absoluteX="726dp"
+        tools:layout_editor_absoluteY="8dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
