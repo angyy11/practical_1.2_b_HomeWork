@@ -12,7 +12,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private int mCount = 0;
     private TextView mShowCount;
-    boolean iscolor = true;
     private TextView btnZero;
     private TextView btnCount;
 
@@ -35,18 +34,15 @@ public class MainActivity extends AppCompatActivity {
         if (mShowCount != null) {
             mShowCount.setText(Integer.toString(mCount));
             btnZero.setBackgroundColor(Color.BLACK);
-            iscolor = true;
         }
+        btnCount.setBackgroundColor(Color.BLUE);
     }
 
 
     public void showZeroCount(View view) {
-        if(iscolor) {
-            btnZero.setBackgroundColor(Color.GRAY);
-            iscolor = false;
-            mCount = 0;
-            if (mShowCount != null)
-                mShowCount.setText(Integer.toString(mCount - mCount));
-        }
+        btnZero.setBackgroundColor(Color.GRAY);
+        mCount = 0;
+        if (mShowCount != null)
+            mShowCount.setText(Integer.toString(mCount - mCount));
     }
 }
