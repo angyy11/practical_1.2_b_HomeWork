@@ -31,18 +31,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void countUp (View view) {
         ++mCount;
-        if (mShowCount != null) {
-            mShowCount.setText(Integer.toString(mCount));
-            btnZero.setBackgroundColor(Color.BLACK);
+        mShowCount.setText(Integer.toString(mCount));
+        btnZero.setBackgroundColor(Color.RED);
+
+
+        if((mCount%2)==0){
+            btnCount.setBackgroundColor(Color.GREEN);
         }
-        btnCount.setBackgroundColor(Color.BLUE);
+        else{
+            btnCount.setBackgroundColor(Color.BLUE);
+        }
+
     }
 
 
     public void showZeroCount(View view) {
         btnZero.setBackgroundColor(Color.GRAY);
         mCount = 0;
-        if (mShowCount != null)
-            mShowCount.setText(Integer.toString(mCount - mCount));
+        mShowCount.setText(Integer.toString(mCount));
     }
 }
